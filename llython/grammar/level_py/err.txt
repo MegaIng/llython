@@ -1,0 +1,28 @@
+Error in File "C:/Program Files/Python37/Lib/site-packages/sympy/utilities/iterables.py", line 2212:
+
+Traceback (most recent call last):
+  File "C:/Users/tramp/PycharmProjects/llython/llython/grammar/test.py", line 44, in check_path
+    parse(decode_python_source(path.open('rb').read()))
+  File "C:\Users\tramp\PycharmProjects\llython\llython\grammar\parser.py", line 78, in parse
+    return _parser.parse(text)
+  File "C:\Program Files\Python37\lib\site-packages\lark\lark.py", line 223, in parse
+    return self.parser.parse(text)
+  File "C:\Program Files\Python37\lib\site-packages\lark\parser_frontends.py", line 38, in parse
+    return self.parser.parse(token_stream, *[sps] if sps is not NotImplemented else [])
+  File "C:\Program Files\Python37\lib\site-packages\lark\parsers\lalr_parser.py", line 68, in parse
+    for token in stream:
+  File "C:\Users\tramp\PycharmProjects\llython\llython\grammar\parser.py", line 46, in process
+    yield from stream
+  File "C:\Program Files\Python37\lib\site-packages\lark\indenter.py", line 32, in process
+    for token in stream:
+  File "C:\Users\tramp\PycharmProjects\llython\llython\grammar\parser.py", line 27, in process
+    for token in stream:
+  File "C:\Program Files\Python37\lib\site-packages\lark\lexer.py", line 319, in lex
+    for x in l.lex(stream, self.root_lexer.newline_types, self.root_lexer.ignore_types):
+  File "C:\Program Files\Python37\lib\site-packages\lark\lexer.py", line 167, in lex
+    raise UnexpectedCharacters(stream, line_ctr.char_pos, line_ctr.line, line_ctr.column, state=self.state)
+lark.exceptions.UnexpectedCharacters: No terminal defined for '0' at line 2212 col 21
+
+    elif ordered == 00:
+                    ^
+
